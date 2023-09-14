@@ -15,7 +15,8 @@ public class SailBoat extends Boat{
     public SailBoat() {
     }
 
-    public SailBoat(Integer mastsNumber) {
+    public SailBoat(Integer mastsNumber, String registration, Double lenght, Integer manufatureYear) {
+        super(registration, lenght, manufatureYear);
         this.mastsNumber = mastsNumber;
     }
 
@@ -35,6 +36,8 @@ public class SailBoat extends Boat{
 
     @Override
     public String toString() {
-        return "SailBoat{" + "mastsNumber=" + mastsNumber + '}';
+        return super.toString() + " - SailBoat{" + "mastsNumber=" + mastsNumber + '}';
     }
+    
+    
 }

@@ -15,7 +15,8 @@ public class MotorBoat extends Boat{
     public MotorBoat() {
     }
 
-    public MotorBoat(Integer power) {
+    public MotorBoat(Integer power, String registration, Double lenght, Integer manufatureYear) {
+        super(registration, lenght, manufatureYear);
         this.power = power;
     }
 
@@ -35,6 +36,6 @@ public class MotorBoat extends Boat{
     
     @Override
     public String toString() {
-        return "MotorBoat{" + "power=" + power + '}';
+        return super.toString() + " - MotorBoat{" + "power=" + power + '}';
     }
 }

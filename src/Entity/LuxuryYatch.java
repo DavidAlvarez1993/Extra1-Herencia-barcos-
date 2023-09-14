@@ -15,7 +15,8 @@ public class LuxuryYatch extends MotorBoat {
     public LuxuryYatch() {
     }
 
-    public LuxuryYatch(Integer cabinNumber) {
+    public LuxuryYatch(Integer cabinNumber, Integer power, String registration, Double lenght, Integer manufatureYear) {
+        super(power, registration, lenght, manufatureYear);
         this.cabinNumber = cabinNumber;
     }
 
@@ -35,6 +36,6 @@ public class LuxuryYatch extends MotorBoat {
 
     @Override
     public String toString() {
-        return "LuxuryYatch{" + "cabinNumber=" + cabinNumber + '}';
+        return super.toString() + " - LuxuryYatch{" + "number of cabins=" + cabinNumber + '}';
     }
 }

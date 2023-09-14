@@ -34,7 +34,6 @@ public class Rent {
         this.price = price;
     }
     
-    
 
     public String getClientName() {
         return clientName;
@@ -92,7 +91,6 @@ public class Rent {
         if (longBetweenDates != null){
             calculatedPrice =(double) longBetweenDates;
             calculatedPrice = calculatedPrice*10 + boat.calculateModule();
-            //donde dice 80 va el modulo de los barcos
         }
         
         return calculatedPrice;

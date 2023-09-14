@@ -55,6 +55,6 @@ public class Boat {
 
     @Override
     public String toString() {
-        return "Boat{" + "registration=" + registration + ", lenght=" + lenght + ", manufatureYear=" + manufatureYear + '}';
+        return "Boat{" + "registration= " + registration + ", lenght= " + lenght + ", manufature year= " + manufatureYear + '}';
     }
 }
